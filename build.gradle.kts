@@ -1,6 +1,7 @@
 version = "1.4.10"
 plugins {
-    kotlin("jvm") version "1.4.10"
+    kotlin("jvm") version "1.5.20"
+//    kotlin("plugin.serialization") version "1.5.20"  단순 라이브러리용 fat jar 만드는 용도로는 plugins 에 추가할 필요 없는 듯?
     id("kr.entree.spigradle") version "2.2.3"
 }
 group = "kr.sul"
@@ -12,6 +13,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    implementation("org.jetbrains.kotlinx", "kotlinx-serialization-json", "1.2.2")
     compileOnly("com.destroystokyo.paper", "paper-api", "1.12.2-R0.1-SNAPSHOT")
 }
 

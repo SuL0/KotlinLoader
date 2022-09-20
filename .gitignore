@@ -3,3 +3,7 @@
 /build/
 /debug/
 /.idea/
+/bukkit/build/
+/bukkit/debug/
+/bungee/debug/
+/bungee/build/
